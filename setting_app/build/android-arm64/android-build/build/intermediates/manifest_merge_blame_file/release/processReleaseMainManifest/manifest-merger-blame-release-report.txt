@@ -1,0 +1,207 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.qtproject.example.setting_app"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="28"
+10        android:targetSdkVersion="34" />
+11
+12    <uses-permission
+12-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:7:5-107
+13        android:name="android.permission.ACCESS_FINE_LOCATION"
+13-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:7:22-76
+14        android:maxSdkVersion="30" />
+14-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:7:78-104
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:8:5-80
+15-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:8:22-76
+16    <uses-permission
+16-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:9:5-96
+17        android:name="android.permission.BLUETOOTH"
+17-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:9:22-65
+18        android:maxSdkVersion="30" />
+18-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:9:67-93
+19    <uses-permission
+19-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:10:5-102
+20        android:name="android.permission.BLUETOOTH_ADMIN"
+20-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:10:22-71
+21        android:maxSdkVersion="30" />
+21-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:10:73-99
+22    <uses-permission
+22-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:11:5-106
+23        android:name="android.permission.BLUETOOTH_ADVERTISE"
+23-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:11:22-75
+24        android:minSdkVersion="31" />
+24-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:11:77-103
+25    <uses-permission
+25-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:12:5-104
+26        android:name="android.permission.BLUETOOTH_CONNECT"
+26-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:12:22-73
+27        android:minSdkVersion="31" />
+27-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:12:75-101
+28    <uses-permission
+28-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:13:5-148
+29        android:name="android.permission.BLUETOOTH_SCAN"
+29-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:13:22-70
+30        android:minSdkVersion="31"
+30-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:13:72-98
+31        android:usesPermissionFlags="neverForLocation" />
+31-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:13:99-145
+32    <uses-permission android:name="android.permission.INTERNET" />
+32-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:14:5-68
+32-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:14:22-64
+33    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+33-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:15:5-82
+33-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:15:22-78
+34
+35    <supports-screens
+35-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:17:5-21:39
+36        android:anyDensity="true"
+36-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:18:9-34
+37        android:largeScreens="true"
+37-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:19:9-36
+38        android:normalScreens="true"
+38-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:20:9-37
+39        android:smallScreens="true" />
+39-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:21:9-36
+40
+41    <permission
+41-->[androidx.core:core:1.13.1] /home/mr_robot/.gradle/caches/8.10/transforms/614f50bb2b90647a5f75820a3da4b2e4/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+42        android:name="org.qtproject.example.setting_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+42-->[androidx.core:core:1.13.1] /home/mr_robot/.gradle/caches/8.10/transforms/614f50bb2b90647a5f75820a3da4b2e4/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+43        android:protectionLevel="signature" />
+43-->[androidx.core:core:1.13.1] /home/mr_robot/.gradle/caches/8.10/transforms/614f50bb2b90647a5f75820a3da4b2e4/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+44
+45    <uses-permission android:name="org.qtproject.example.setting_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+45-->[androidx.core:core:1.13.1] /home/mr_robot/.gradle/caches/8.10/transforms/614f50bb2b90647a5f75820a3da4b2e4/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+45-->[androidx.core:core:1.13.1] /home/mr_robot/.gradle/caches/8.10/transforms/614f50bb2b90647a5f75820a3da4b2e4/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+46
+47    <application
+47-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:22:5-58:19
+48        android:name="org.qtproject.qt.android.bindings.QtApplication"
+48-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:23:9-71
+49        android:allowBackup="true"
+49-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:27:9-35
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.13.1] /home/mr_robot/.gradle/caches/8.10/transforms/614f50bb2b90647a5f75820a3da4b2e4/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+51        android:extractNativeLibs="true"
+52        android:fullBackupOnly="false"
+52-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:28:9-39
+53        android:hardwareAccelerated="true"
+53-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:24:9-43
+54        android:label="setting_app"
+54-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:25:9-36
+55        android:requestLegacyExternalStorage="true" >
+55-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:26:9-52
+56        <activity
+56-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:29:9-47:20
+57            android:name="org.qtproject.qt.android.bindings.QtActivity"
+57-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:30:13-72
+58            android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
+58-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:31:13-182
+59            android:exported="true"
+59-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:34:13-36
+60            android:launchMode="singleTop"
+60-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:32:13-43
+61            android:screenOrientation="unspecified" >
+61-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:33:13-52
+62            <intent-filter>
+62-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:35:13-38:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:36:17-69
+63-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:36:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:37:17-77
+65-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:37:27-74
+66            </intent-filter>
+67
+68            <meta-data
+68-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:40:11-42:47
+69                android:name="android.app.lib_name"
+69-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:41:17-52
+70                android:value="setting_app" />
+70-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:42:17-44
+71            <meta-data
+71-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:44:11-46:36
+72                android:name="android.app.arguments"
+72-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:45:17-53
+73                android:value="" />
+73-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:46:17-33
+74        </activity>
+75
+76        <provider
+77            android:name="androidx.core.content.FileProvider"
+77-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:50:13-62
+78            android:authorities="org.qtproject.example.setting_app.qtprovider"
+78-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:51:13-62
+79            android:exported="false"
+79-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:52:13-37
+80            android:grantUriPermissions="true" >
+80-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:53:13-47
+81            <meta-data
+81-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:54:13-56:59
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:55:17-67
+83                android:resource="@xml/qtprovider_paths" />
+83-->/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml:56:17-57
+84        </provider>
+85        <provider
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+87            android:authorities="org.qtproject.example.setting_app.androidx-startup"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+91                android:value="androidx.startup" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+92        </provider>
+93
+94        <receiver
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+95            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+96            android:directBootAware="false"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+97            android:enabled="true"
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+98            android:exported="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+99            android:permission="android.permission.DUMP" >
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+101                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+104                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+107                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+110                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/mr_robot/.gradle/caches/8.10/transforms/acbc698e3f0c16775281193bdfceb4d0/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+111            </intent-filter>
+112        </receiver>
+113    </application>
+114
+115</manifest>

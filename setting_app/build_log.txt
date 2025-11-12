@@ -1,0 +1,154 @@
+========================================
+Building Qt Android App: RobotWiFiManager
+========================================
+✓ Qt Android found: /home/mr_robot/Qt/6.8.3/android_arm64_v8a
+✓ Qt Android found: /home/mr_robot/Qt/6.8.3/android_arm64_v8a
+✓ Android SDK: /home/mr_robot/Android/Sdk
+✓ Android NDK: /home/mr_robot/Android/Sdk/ndk/29.0.14033849
+
+Creating build directory: build/android-arm64
+Configuring project with CMake...
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Performing Test HAVE_EGL
+-- Performing Test HAVE_EGL - Success
+-- Found EGL: /home/mr_robot/Android/Sdk/ndk/29.0.14033849/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include (found version "1.5") 
+-- Performing Test HAVE_GLESv2
+-- Performing Test HAVE_GLESv2 - Success
+-- Found GLESv2: /home/mr_robot/Android/Sdk/ndk/29.0.14033849/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include  
+-- Found WrapVulkanHeaders: /home/mr_robot/Android/Sdk/ndk/29.0.14033849/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include  
+-- Configuring 'setting_app' for the following Android ABIs: arm64-v8a (default)
+-- Found android platform plugin at: /home/mr_robot/Qt/6.8.3/android_arm64_v8a/plugins/platforms/libplugins_platforms_qtforandroid_arm64-v8a.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64
+
+Building project...
+[ 10%] Built target qt_internal_plugins
+[ 10%] Automatic MOC and UIC for target setting_app
+[ 10%] Built target setting_app_copy_apk_dependencies
+[ 10%] Built target setting_app_autogen
+[ 20%] Running AUTOMOC file extraction for target setting_app
+[ 20%] Built target setting_app_automoc_json_extraction
+[ 30%] Running moc --collect-json for target setting_app
+[ 50%] Building CXX object CMakeFiles/setting_app.dir/setting_app_autogen/mocs_compilation.cpp.o
+[ 50%] Building CXX object CMakeFiles/setting_app.dir/mainwindow.cpp.o
+[ 60%] Building CXX object CMakeFiles/setting_app.dir/networkmanager.cpp.o
+[ 70%] Building CXX object CMakeFiles/setting_app.dir/main.cpp.o
+[ 80%] Linking CXX shared module libsetting_app_arm64-v8a.so
+[ 80%] Built target setting_app
+[ 90%] Copying setting_app binary to apk folder
+[ 90%] Built target setting_app_prepare_apk_dir
+[100%] Creating APK for setting_app
+Generating Android Package
+  Input file: /home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-setting_app-deployment-settings.json
+  Output directory: /home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/
+  Application binary: setting_app
+  Android build platform: android-36
+  Install to device: No
+Skipping createRCC
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.6.0) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :preBuild UP-TO-DATE
+> Task :preReleaseBuild UP-TO-DATE
+> Task :javaPreCompileRelease
+> Task :generateReleaseResValues
+> Task :checkReleaseAarMetadata
+> Task :mapReleaseSourceSetPaths
+> Task :generateReleaseResources
+> Task :packageReleaseResources
+> Task :mergeReleaseResources
+> Task :createReleaseCompatibleScreenManifests
+> Task :extractDeepLinksRelease
+> Task :parseReleaseLocalResources
+
+> Task :processReleaseMainManifest
+package="org.qtproject.example.setting_app" found in source AndroidManifest.xml: /home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="org.qtproject.example.setting_app" from the source AndroidManifest.xml: /home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build/AndroidManifest.xml.
+
+> Task :processReleaseManifest
+> Task :extractProguardFiles
+> Task :mergeReleaseJniLibFolders
+> Task :mergeReleaseNativeLibs
+> Task :checkReleaseDuplicateClasses
+> Task :mergeReleaseStartupProfile
+> Task :mergeReleaseArtProfile
+> Task :mergeReleaseShaders
+> Task :compileReleaseShaders NO-SOURCE
+> Task :generateReleaseAssets UP-TO-DATE
+> Task :mergeReleaseAssets
+> Task :compressReleaseAssets
+> Task :stripReleaseDebugSymbols
+> Task :extractReleaseVersionControlInfo
+> Task :processReleaseJavaRes NO-SOURCE
+> Task :extractReleaseNativeSymbolTables
+> Task :collectReleaseDependencies
+> Task :mergeReleaseNativeDebugMetadata
+> Task :sdkReleaseDependencyData
+> Task :writeReleaseAppMetadata
+> Task :writeReleaseSigningConfigVersions
+> Task :processReleaseManifestForPackage
+> Task :mergeReleaseJavaResource
+> Task :processReleaseResources
+> Task :compileReleaseJavaWithJavac
+> Task :desugarReleaseFileDependencies
+> Task :generateReleaseLintVitalReportModel
+> Task :dexBuilderRelease
+> Task :mergeReleaseGlobalSynthetics
+> Task :optimizeReleaseResources
+> Task :mergeExtDexRelease
+> Task :mergeDexRelease
+> Task :compileReleaseArtProfile
+> Task :packageRelease
+> Task :createReleaseApkListingFileRedirect
+> Task :lintVitalAnalyzeRelease
+> Task :lintVitalReportRelease
+> Task :lintVitalRelease
+> Task :assembleRelease
+
+BUILD SUCCESSFUL in 27s
+46 actionable tasks: 46 executed
+Android package built successfully in 33.687 ms.
+  -- File: /home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/android-build//build/outputs/apk/release/android-build-release-unsigned.apk
+[100%] Built target setting_app_make_apk
+[100%] Built target apk
+[100%] Built target apk_all
+
+========================================
+Build completed successfully!
+========================================
+
+Build output: build/android-arm64
+
+Next steps:
+1. Create Android package with androiddeployqt
+2. Or manually package the .so files into APK
+
+To run the robot server on Ubuntu 22.04:
+  sudo apt install python3-bluetooth network-manager
+  pip3 install pybluez
+  python3 robot_server.py

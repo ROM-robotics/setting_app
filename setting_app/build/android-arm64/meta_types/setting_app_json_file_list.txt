@@ -1,0 +1,2 @@
+/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/setting_app_autogen/include/../EWIEGA46WW/moc_mainwindow.cpp.json
+/home/mr_robot/Desktop/Git/setting_app/setting_app/build/android-arm64/setting_app_autogen/include/../EWIEGA46WW/moc_networkmanager.cpp.json

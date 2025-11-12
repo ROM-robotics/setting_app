@@ -1,0 +1,8 @@
+# Python requirements for Robot WiFi Management Server
+# Install with: pip3 install -r requirements.txt
+
+# PyBluez - Bluetooth library for Python
+pybluez>=0.23
+
+# Note: NetworkManager (nmcli) is required but installed via apt:
+# sudo apt install network-manager

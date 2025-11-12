@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="qt_sources">
+        <item>https://download.qt.io/online/qtsdkrepository/android/</item>
+    </array>
+    
+    <array name="qt_libs">
+        <item>Qt6Core</item>
+        <item>Qt6Gui</item>
+        <item>Qt6Widgets</item>
+        <item>Qt6Network</item>
+        <item>Qt6Bluetooth</item>
+    </array>
+    
+    <array name="bundled_libs">
+        <!-- Additional bundled libraries if needed -->
+    </array>
+</resources>

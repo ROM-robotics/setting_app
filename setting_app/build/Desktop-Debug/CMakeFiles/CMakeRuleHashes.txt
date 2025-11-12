@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+f50774c0342287c2d370a76055967c6a CMakeFiles/setting_app_autogen

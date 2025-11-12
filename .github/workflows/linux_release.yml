@@ -6,9 +6,9 @@ permissions:
 on:
   push:
     tags:
-      - 'linux-alpha[0-9]+.[0-9]+.[0-9]+'
-      - 'linux-beta[0-9]+.[0-9]+.[0-9]+'
-      - 'linux-r[0-9]+.[0-9]+.[0-9]+'
+      - 'linux-alpha*.*.*'
+      - 'linux-beta*.*.*'
+      - 'linux-r*.*.*'
   # Manual trigger ကို ခွင့်ပြုခြင်း (GitHub UI မှ Run workflow နှိပ်ပြီး run လို့ရမည်)
   workflow_dispatch:
 
@@ -45,7 +45,7 @@ jobs:
       - name: 4. Configure CMake
         # Qt 6 ကို CMake ဖြင့် သုံးသောအခါ CMAKE_PREFIX_PATH ကို သတ်မှတ်ပေးရန် လိုအပ်သည်
         run: |
-          cmake -S . -B build \
+          cmake -S setting_app -B build \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_PREFIX_PATH=${{ env.Qt6_DIR }} \
             -DCMAKE_INSTALL_PREFIX=${{ github.workspace }}/install

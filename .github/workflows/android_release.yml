@@ -6,9 +6,9 @@ permissions:
 on:
   push:
     tags:
-      - 'android-alpha[0-9]+.[0-9]+.[0-9]+'
-      - 'android-beta[0-9]+.[0-9]+.[0-9]+'
-      - 'android-r[0-9]+.[0-9]+.[0-9]+'
+      - 'android-alpha*.*.*'
+      - 'android-beta*.*.*'
+      - 'android-r*.*.*'
   # Manual trigger ကို ခွင့်ပြုခြင်း (GitHub UI မှ Run workflow နှိပ်ပြီး run လို့ရမည်)
   workflow_dispatch:
 
@@ -57,7 +57,7 @@ jobs:
 
       - name: 8. Configure CMake for Android
         run: |
-          cmake -S . -B build-android \
+          cmake -S setting_app -B build-android \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_ROOT/build/cmake/android.toolchain.cmake \
             -DANDROID_ABI=arm64-v8a \
@@ -88,8 +88,8 @@ jobs:
             "useLLVM": true,
             "ndk-host": "linux-x86_64",
             "target-architecture": "arm64-v8a",
-            "android-package-source-directory": "${{ github.workspace }}/android",
-            "qml-root-path": "${{ github.workspace }}",
+            "android-package-source-directory": "${{ github.workspace }}/setting_app/android",
+            "qml-root-path": "${{ github.workspace }}/setting_app",
             "application-binary": "${{ github.workspace }}/build-android/libsetting_app_arm64-v8a.so",
             "android-package": "com.romrobotics.wifimanager",
             "android-app-name": "Robot WiFi Manager",

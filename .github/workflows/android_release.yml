@@ -28,7 +28,16 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: 3. Install Qt 6.8.3 for Android
+      - name: 3a. Install Qt 6.8.3 for Desktop (Host Tools)
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '6.8.3'
+          host: 'linux'
+          target: 'desktop'
+          arch: 'gcc_64'
+          modules: 'qtnetworkauth'
+
+      - name: 3b. Install Qt 6.8.3 for Android
         uses: jurplel/install-qt-action@v3
         with:
           version: '6.8.3'

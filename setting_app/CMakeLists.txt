@@ -23,6 +23,21 @@ target_link_libraries(setting_app
         Qt::Bluetooth
 )
 
+# Android-specific configuration
+if(ANDROID)
+    set_target_properties(setting_app PROPERTIES
+        QT_ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android"
+        QT_ANDROID_MIN_SDK_VERSION "26"
+        QT_ANDROID_TARGET_SDK_VERSION "34"
+    )
+    
+    # Generate deployment settings for androiddeployqt
+    qt_android_generate_deployment_settings(setting_app)
+    
+    # Create APK target
+    qt_android_add_apk_target(setting_app)
+endif()
+
 include(GNUInstallDirs)
 
 install(TARGETS setting_app

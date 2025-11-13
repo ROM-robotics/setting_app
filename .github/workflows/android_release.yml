@@ -59,7 +59,7 @@ jobs:
       - name: 6. Install Android SDK Build Tools and Platform
         run: |
           sdkmanager --install "build-tools;34.0.0" "platforms;android-34"
-          sdkmanager --licenses
+          yes | sdkmanager --licenses || true
 
       - name: 7. Create Build Directory
         run: mkdir -p build-android
@@ -80,40 +80,10 @@ jobs:
       - name: 9. Build Qt Application (Release)
         run: cmake --build build-android --config Release -j$(nproc)
 
-      - name: 10. Create Android APK using androiddeployqt
+      - name: 10. Build Android APK
         run: |
-          # Find Qt androiddeployqt tool
-          ANDROIDDEPLOYQT=${{ env.Qt6_DIR }}/bin/androiddeployqt
-          
-          # Create deployment settings JSON
-          cat > build-android/android-deploy.json << EOF
-          {
-            "description": "Robot WiFi Manager",
-            "qt": "${{ env.Qt6_DIR }}",
-            "sdk": "$ANDROID_HOME",
-            "ndk": "$ANDROID_NDK_ROOT",
-            "toolchain-prefix": "llvm",
-            "tool-prefix": "llvm",
-            "useLLVM": true,
-            "ndk-host": "linux-x86_64",
-            "target-architecture": "arm64-v8a",
-            "android-package-source-directory": "${{ github.workspace }}/setting_app/android",
-            "qml-root-path": "${{ github.workspace }}/setting_app",
-            "application-binary": "${{ github.workspace }}/build-android/libsetting_app_arm64-v8a.so",
-            "android-package": "com.romrobotics.wifimanager",
-            "android-app-name": "Robot WiFi Manager",
-            "stdcpp-path": "$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so"
-          }
-          EOF
-          
-          # Run androiddeployqt
-          $ANDROIDDEPLOYQT \
-            --input build-android/android-deploy.json \
-            --output build-android/android-build \
-            --android-platform android-34 \
-            --jdk /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.*/x64 \
-            --gradle \
-            --release
+          # Build the APK target created by qt_android_add_apk_target
+          cmake --build build-android --target setting_app_apk --config Release
 
       - name: 11. Sign APK (if keystore available)
         id: sign_apk
@@ -125,8 +95,14 @@ jobs:
             # Decode keystore
             echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > keystore.jks
             
-            # Sign APK
-            APK_FILE=$(find build-android/android-build/build/outputs/apk/release -name "*.apk" | head -n1)
+            # Sign APK - search in the Qt-generated APK location
+            APK_FILE=$(find build-android -name "*.apk" -path "*/android-build/build/outputs/apk/release/*.apk" | head -n1)
+            
+            if [ -z "$APK_FILE" ]; then
+              echo "Error: No APK file found for signing"
+              find build-android -name "*.apk"
+              exit 1
+            fi
             
             jarsigner -verbose \
               -sigalg SHA256withRSA \
@@ -157,8 +133,8 @@ jobs:
             VERSION_NAME="dev-$(echo ${{ github.sha }} | cut -c1-7)"
           fi
           
-          # Find the generated APK file
-          APK_FILE=$(find build-android/android-build/build/outputs/apk/release -name "*.apk" | head -n1)
+          # Find the generated APK file - search in Qt-generated APK location
+          APK_FILE=$(find build-android -name "*.apk" -path "*/android-build/build/outputs/apk/release/*.apk" | head -n1)
           
           if [ -z "$APK_FILE" ]; then
             echo "Error: No APK file found"
